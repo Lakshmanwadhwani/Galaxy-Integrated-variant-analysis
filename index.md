@@ -6,6 +6,9 @@ The project consists of three pipelines;
 ## Exome Analysis Pipeline
 The work commences when we input our exome resequence data and map the sequence reads to the Hg19 genome. The task of mappig is accomplished using the **BWA** tool. Next PCR artifacts and duplicates removed using **Picard**. Once this is completed the **Varscan** utility is used to call variants (Indels & SNP's).
 
+## Transcriptome Analysis Pipeline
+During this step RNA-seq data is used as the primary input. The **TopHat** utility is then used to map the reads and **Varscan**used to midentify gene fusions and call other variants.**Cufflinks** is used quantify gene expression and the results fed into the variant analysis pipepline 
+
 
 
 
