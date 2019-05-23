@@ -1,6 +1,8 @@
 ## Welcome to GitHub Pages
 Welcome to my Galaxy project. This exercise is a reproduction of a cancer anaysis using an integrated variant analysis pipeline. What does that mean? First lets talk about  "Integrated Variant".The term is used to describe exome and transcriptome sequencing data derived from tumours specifically looking at variations that fall under three general categories. Gene mutations, differential gene expression and structrural variations. Due to advent of next generation sequencing technologies it has become possible to obtain sequence information from tumours that would provide the researcher a comprehensive genomic profile of the tumour. This mutl-faceted approach holds strong promise in persosnalized oncology
-The project consists of three pipelines, an exome anaysis pipeli
+The project consists of three pipelines;
+##Exome Analysis Pipeline
+
 
 
 # Next describe the software used for the pipelines
