@@ -3,8 +3,8 @@ Welcome to my Galaxy project. This exercise is a reproduction of a cancer anaysi
 The project consists of three pipelines, an exome anaysis pipeli
 
 
-## Next describe the software used for the pipelines
-### exome analysis software: BWA, picard Varscan
+# Next describe the software used for the pipelines
+## exome analysis software: BWA, picard Varscan
 ### Transcriptome analysis software: Tophat, picard cufflinks, Varscan
 ### Integrated Variant analysis: Varscan, cufflink, annovar
 
