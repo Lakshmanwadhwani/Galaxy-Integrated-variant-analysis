@@ -1,0 +1,4 @@
+search_term	match_term	match_type	category	sources
+TSC2	TSC2	Definite	KINASE	GO
+TSC2	TSC2	Definite	TUMOR SUPPRESSOR	GO
+TSC2	TSC2	Definite	CLINICALLY ACTIONABLE	FoundationOneGenes|MskImpact

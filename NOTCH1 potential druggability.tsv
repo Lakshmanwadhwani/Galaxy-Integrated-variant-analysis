@@ -1,0 +1,4 @@
+search_term	match_term	match_type	category	sources
+NOTCH1	NOTCH1	Definite	CLINICALLY ACTIONABLE	CarisMolecularIntelligence|MskImpact|FoundationOneGenes
+NOTCH1	NOTCH1	Definite	DRUGGABLE GENOME	HingoraniCasas
+NOTCH1	NOTCH1	Definite	CELL SURFACE	GO

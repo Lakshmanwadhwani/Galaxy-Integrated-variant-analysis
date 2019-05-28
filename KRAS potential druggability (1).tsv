@@ -1,0 +1,4 @@
+search_term	match_term	match_type	category	sources
+KRAS	KRAS	Definite	CLINICALLY ACTIONABLE	CarisMolecularIntelligence|MskImpact|FoundationOneGenes
+KRAS	KRAS	Definite	SERINE THREONINE KINASE	GO
+KRAS	KRAS	Definite	KINASE	GO
