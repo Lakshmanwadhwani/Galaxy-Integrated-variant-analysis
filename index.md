@@ -16,6 +16,16 @@ During this step RNA-seq data is used as the primary input. The **TopHat** utili
 This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on cufflinks to remove artifacts. Next the annovar tool is used to annotate the variants, find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data;
 `https://usegalaxy.org:/u/lakshman/h/-integrated-variant-analysis-new`
 
+## Bugs and Issues:
+Running the pipelines presented no issues in general for the exome analysis and the transcriptome analysis workflows. However i run into some problems running the Integrated Variant Analysis Pipe. 
+The pipelines consists of 27 steps and everything works as it should till we get to step 20. This step takes inputs from step 19 where the Annovar tool is used to annotate our variants. The next critical step in our analysis requires providing information from our rare and deletrious mutants and inputing this into the Drug-Gene interaction database. The outputs that we would generate from this query would provide information on drug-gene interactions and potential druggability. This is where the critical failure occurs. Upon there investigation the problem seems to lie with a utitlity  called `dgidb_annotator`. In light of this I submitted a ticket to the galaxy development team to hopefully get the bug fixed. The issue seems to lie with the version of the dgidb annotator tool. The tool fails to pick up annotation for valid gene ID's and instead returns an empty green "success" data set.
+The dev team worked around the issue and updated the tool version. I still run into the same issue after this.
+
+## Solution:
+ Instead of relying on the defective dgidg annotator tool i decided to manually input the information of my rare and deletrious mutants into the dgidb database
+ ### About dgidb
+ The drug–gene interaction database (DGIdb, www.dgidb.org) consolidates, organizes and presents drug–gene interactions and gene druggability information from papers, databases and web resources. DGIdb normalizes content from 30 disparate sources and allows for user-friendly advanced browsing, searching and filtering for ease of access through an intuitive web user interface, application programming interface (API) and public cloud-based server image
+
 
 
 
