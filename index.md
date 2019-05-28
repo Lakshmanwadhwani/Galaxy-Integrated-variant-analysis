@@ -9,7 +9,8 @@ The work commences when we input our exome resequence data and map the sequence 
 
 
 ## Transcriptome Analysis Pipeline
-During this step RNA-seq data is used as the primary input. The **TopHat** utility is then used to map the reads and **Varscan**used to identify gene fusions and call other variants.**Cufflinks** is used quantify gene expression and the results fed into the variant analysis pipepline
+During this step RNA-seq data is used as the primary input. The **TopHat** utility is then used to map the reads and **Varscan**used to identify gene fusions and call other variants.**Cufflinks** is used quantify gene expression and the results fed into the variant analysis pipepline. Galaxy page link showing pipelines, data inputs/outputs, below;
+`https://usegalaxy.org:/u/lakshmanw/h/transcriptome-analysis`
 
 ## Integrated Variant Analysis Pipeline
 This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on cufflinks to remove artifacts. Next the annovar tool is used to annotate the variants, find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated.
