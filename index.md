@@ -1,19 +1,23 @@
 ## Welcome to GitHub Pages
 Welcome to my Galaxy project. This exercise is a reproduction of a cancer anaysis using an integrated variant analysis pipeline. What does that mean? First lets talk about  "Integrated Variant".The term is used to describe exome and transcriptome sequencing data derived from tumours specifically looking at variations that fall under three general categories. Gene mutations, differential gene expression and structrural variations. Due to advent of next generation sequencing technologies it has become possible to obtain sequence information from tumours that would provide the researcher a comprehensive genomic profile of the tumour. This mutl-faceted approach holds strong promise in persosnalized oncology
 
+## About our tumour sample
+For my experiment the source of my exome and transcriptome sequence information was derived from the MIA PaCa-2 cancer cell line. The original cell lines were derived from the Carcinoma of a 65 year old male. The MIA PaCa-2 cell line has been used for decades as a model to study the mechanisms of carcinogenesis in pancreatic cancer. I will be analyzing the targeted exome and whole transcriptome sequence data from the MIA PaCa-2 tumour, in particular the exonic regions of 577 genes that are commonly included in cancer gene cell panels.
+
+
 The project consists of three pipelines;
 
 ## Exome Analysis Pipeline
-The work commences when we input our exome resequence data and map the sequence reads to the Hg19 genome. The task of mappig is accomplished using the **BWA** tool. Next PCR artifacts and duplicates are removed using **Picard**. Once this is completed the **Varscan** utility is used to call variants (Indels & SNP's). Below is the link to the galaxy page which should display all the pipelines data inputs,outputs and data visualization tools.
+The work commences when we input our exome resequence data and map the sequence reads to the Hg19 genome. The task of mappig is accomplished using the **BWA** tool. Next PCR artifacts and duplicates are removed using **Picard**. Once this is completed the **Varscan** utility is used to call variants (Indels & SNP's). Below is the link to the galaxy page which should display all the pipelines data inputs,outputs and data visualization tools.Copy and paste the link in your browser to access.
 [https://usegalaxy.org/u/lakshmanw/h/imported-exome-basics-analysis-mp2](URL)
 
 
 ## Transcriptome Analysis Pipeline
 During this step RNA-seq data is used as the primary input. The **TopHat** utility is then used to map the reads and **Varscan**used to identify gene fusions and call other variants.**Cufflinks** is used quantify gene expression and the results fed into the variant analysis pipepline. Galaxy page link showing pipelines, data inputs/outputs, below;
-[https://usegalaxy.org/u/lakshmanw/h/transcriptome-analysis](URL)
+[https://usegalaxy.org/u/lakshmanw/h/transcriptome-analysis](URL). Copy and paste the link into your browser for access.
 
 ## Integrated Variant Analysis Pipeline
-This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on cufflinks to remove artifacts. Next the annovar tool is used to annotate the variants, find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data;
+This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on cufflinks to remove artifacts. Next the annovar tool is used to annotate the variants, find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data. Copy and paste the link in your browser for access.
 [https://usegalaxy.org/u/lakshmanw/h/-integrated-variant-analysis-new](URL)
 
 ## Bugs and Issues:
