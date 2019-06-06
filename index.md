@@ -30,7 +30,7 @@ The dev team worked around the issue and updated the tool version. I still run i
  ### About dgidb
  The drug–gene interaction database (DGIdb, www.dgidb.org) consolidates, organizes and presents drug–gene interactions and gene druggability information from papers, databases and web resources. DGIdb normalizes content from 30 disparate sources and allows for user-friendly advanced browsing, searching and filtering for ease of access through an intuitive web user interface, application programming interface (API) and public cloud-based server image.
 This is the list of the variants generated from my analysis up to step 19;
-`Kras, Notch 1, TP553, TSC2, ZMYM2, ZNF384`
+Kras, Notch 1, TP553, TSC2, ZMYM2, ZNF384
 
 
 
