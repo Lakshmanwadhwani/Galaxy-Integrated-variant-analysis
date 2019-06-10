@@ -47,7 +47,7 @@ Contained in my github folders are the results of the annotations of our deletri
 
 The first data table titled **drug-gene interaction** contains the following relevant information; Gene name, name of the potentially effective drug, the source of information, and the associated pubmed ID's.
 
-The second data table titled **Potential druggability** contains the follwoing columns; Gene name, category, and the source organization for the information
+The second data table titled **Potential druggability** contains the follwoing columns; Gene name, category, and the source organization for the information. Under category column there are three listings; Clinically actionable target, Druggable genome, and the functional pathway of the gene. 
  
 
 
