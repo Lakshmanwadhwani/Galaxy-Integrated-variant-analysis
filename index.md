@@ -43,7 +43,11 @@ Step 18 of the integrated analysis pipeline produces a data set that includes an
 Step 19 produces a dataset that has filtered the large set of variants from step 18 down to just the deletrious mutations. These are the variants that are thought to have a deletrious impact on the function of the gene.The identified deletrious mutations are **Kras, Notch 1, TP553, TSC2, ZMYM2,  and ZNF384**
 
 **Drug-gene interactions and potential druggability**
-Contained in my github folders are the results of the annotations of our deletrious variants against the drug-gene interaction database.We have two sets of data tables. The information is represented in a TSV file format and an excel file format The first data table titled "drug-gene interaction"
+Contained in my github folders are the results of the annotations of our deletrious variants against the drug-gene interaction database.We have two sets of data tables. The information is represented in a TSV file format and an excel file format. 
+
+The first data table titled **drug-gene interaction** contains the following relevant information; Gene name, name of the potentially effective drug, the source of information, and the associated pubmed ID's.
+
+The second data table titled **Potential druggability** contains the follwoing columns; Gene name, category, and the source organization for the information
  
 
 
