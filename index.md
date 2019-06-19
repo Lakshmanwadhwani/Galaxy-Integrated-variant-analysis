@@ -56,9 +56,6 @@ A finding of a drug-gene interaction or potentially druggable category does not 
 
 The dgidb.org website does not provide any medical or healthcare products, services or advice, and is not for medical emergencies or urgent situations. IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, CALL YOUR DOCTOR OR 911 IMMEDIATELY. Information contained on this website is not a substitute for a doctor's medical judgment or advice. We recommend that you discuss your specific, individual health concerns with your doctor or health care professional.
 
-# Next describe the software used for the pipelines
-## exome analysis software: BWA, picard Varscan
-### Transcriptome analysis software: Tophat, picard cufflinks, Varscan
-### Integrated Variant analysis: Varscan, cufflink, annovar
+I will continue to update the content of this page with more background information on our deleterious variants and implications for therapy.
 
 
