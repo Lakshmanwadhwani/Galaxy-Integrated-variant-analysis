@@ -1,5 +1,5 @@
 ## Welcome to GitHub Pages
-Welcome to my Galaxy project. This exercise is a reproduction of a cancer anaysis using an integrated variant analysis pipeline. What does that mean? First lets talk about  "Integrated Variant".The term is used to describe exome and transcriptome sequencing data derived from tumours specifically looking at variations that fall under three general categories. Gene mutations, differential gene expression and structrural variations. Due to advent of next generation sequencing technologies it has become possible to obtain sequence information from tumours that would provide the researcher a comprehensive genomic profile of the tumour. This mutl-faceted approach holds strong promise in persosnalized oncology
+Welcome to my Galaxy project. This exercise is a reproduction of a cancer anaysis using an integrated variant analysis pipeline. What does that mean? First lets talk about  "Integrated Variant".The term is used to describe exome and transcriptome sequencing data derived from tumours specifically looking at variations that fall under three general categories. Gene mutations, differential gene expression and structrural variations. Due to advent of next generation sequencing technologies it has become possible to obtain sequence information from tumours that would provide the researcher a comprehensive genomic profile of the tumour. This mutl-faceted approach holds strong promise in persosnalized oncology.
 
 ## About our tumour sample
 For my experiment the source of my exome and transcriptome sequence information was derived from the MIA PaCa-2 cancer cell line. The original cell lines were derived from the Carcinoma of a 65 year old male. The MIA PaCa-2 cell line has been used for decades as a model to study the mechanisms of carcinogenesis in pancreatic cancer. I will be analyzing the targeted exome and whole transcriptome sequence data from the MIA PaCa-2 tumour, in particular the exonic regions of 577 genes that are commonly included in cancer gene cell panels.
@@ -9,7 +9,7 @@ The project consists of three pipelines;
 
 ## Exome Analysis Pipeline
 The work commences when we input our exome resequence data and map the sequence reads to the Hg19 genome. The task of mappig is accomplished using the **BWA** tool. Next PCR artifacts and duplicates are removed using **Picard**. Once this is completed the **Varscan** utility is used to call variants (Indels & SNP's). Below is the link to the galaxy page which should display all the pipelines data inputs,outputs and data visualization tools.Copy and paste the link in your browser to access.
-[https://usegalaxy.org/u/lakshmanw/h/imported-exome-basics-analysis-mp2](URL)
+[https://usegalaxy.org/u/lakshmanw/h/imported-exome-basics-analysis-mp2](URL).
 
 
 ## Transcriptome Analysis Pipeline
@@ -17,7 +17,7 @@ During this step RNA-seq data is used as the primary input. The **TopHat2** util
 [https://usegalaxy.org/u/lakshmanw/h/transcriptome-analysis](URL). Copy and paste the link into your browser for access.
 
 ## Integrated Variant Analysis Pipeline
-This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on cufflinks to remove artifacts. Next the annovar tool is used to annotate the variants, find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data. Copy and paste the link in your browser for access.
+This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on **cufflinks** to remove artifacts. Next the **annovar** tool is used to annotate and find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data. Copy and paste the link in your browser for access.
 [https://usegalaxy.org/u/lakshmanw/h/-integrated-variant-analysis-new](URL)
 
 ## Bugs and Issues:
@@ -26,7 +26,7 @@ The pipeline consists of 27 steps and everything works as it should till we get 
 The dev team tried to work around the problem by updating the tool version. I still run into the same issue after this.
 
 ## Solution:
- Instead of relying on the defective dgidg annotator tool i decided to manually input the information of my rare and deletrious mutants into the dgidb database
+ Instead of relying on the defective dgidg annotator tool i decided to manually input the information of my rare and deletrious mutants into the dgidb database.
 
 ### About dgidb
  The drug–gene interaction database (DGIdb, www.dgidb.org) consolidates, organizes and presents drug–gene interactions and gene druggability information from papers, databases and web resources. DGIdb normalizes content from 30 disparate sources and allows for user-friendly advanced browsing, searching and filtering for ease of access through an intuitive web user interface, application programming interface (API) and public cloud-based server image.
@@ -50,7 +50,11 @@ The first data table titled **drug-gene interaction** contains the following rel
 The second data table titled **Potential druggability** contains the follwoing columns; Gene name, category, and the source organization for the information. Under category column there are three listings; Clinically actionable target, Druggable genome, and the functional pathway of the gene. 
  
 
+**Important Disclaimer from the Drug-Gene Interaction Database:**
+Disclaimer: This resource is intended for purely research purposes. It should not be used for emergencies or medical or professional advice
+A finding of a drug-gene interaction or potentially druggable category does not necessarily indicate effectiveness (or lack thereof) of any drug or treatment regimen. A finding of no interaction or no potentially druggable category does not necessarily indicate lack of effectiveness of any drug or treatment regimen. Drug-gene interactions or potentially druggable categories are not presented in ranked order of potential or predicted efficacy.
 
+The dgidb.org website does not provide any medical or healthcare products, services or advice, and is not for medical emergencies or urgent situations. IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, CALL YOUR DOCTOR OR 911 IMMEDIATELY. Information contained on this website is not a substitute for a doctor's medical judgment or advice. We recommend that you discuss your specific, individual health concerns with your doctor or health care professional.
 
 # Next describe the software used for the pipelines
 ## exome analysis software: BWA, picard Varscan
@@ -58,46 +62,3 @@ The second data table titled **Potential druggability** contains the follwoing c
 ### Integrated Variant analysis: Varscan, cufflink, annovar
 
 
-## Next report bugs and issues
-
-## Links to data in galaxy
-
-## Final report
-
-You can use the [editor on GitHub](https://github.com/lmarkal/Galaxy-Integrated-variant-analysis/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-
-
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lmarkal/Galaxy-Integrated-variant-analysis/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-pppp
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
