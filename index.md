@@ -8,17 +8,17 @@ For my experiment the source of my exome and transcriptome sequence information 
 The project consists of three pipelines;
 
 ## Exome Analysis Pipeline
-The work commences when we input our exome resequence data and map the sequence reads to the Hg19 genome. The task of mappig is accomplished using the **BWA** tool. Next PCR artifacts and duplicates are removed using **Picard**. Once this is completed the **Varscan** utility is used to call variants (Indels & SNP's). Below is the link to the galaxy page which should display all the pipelines data inputs,outputs and data visualization tools.Copy and paste the link in your browser to access.
+The work commences when we input our exome resequence data and map the sequence reads to the Hg19 genome. The task of mappig is accomplished using the **BWA** tool. Next PCR artifacts and duplicates are removed using **Picard**. Once this is completed the **Varscan** utility is used to call variants (Indels & SNP's). Below is the link to the galaxy page which should display all the pipelines data inputs,outputs and data visualization tools.Link to Galaxy pipelines and Data;
 [Exome Analysis](https://usegalaxy.org/u/lakshmanw/h/imported-exome-basics-analysis-mp2).
 
 
 ## Transcriptome Analysis Pipeline
 During this step RNA-seq data is used as the primary input. The **TopHat2** utility is then used to map the reads followed by using **Tophat-fusion** to identify fusions. **Varscan** is then used to identify gene fusions and call other variants.**Cufflinks** is used quantify gene expression and the results fed into the variant analysis pipepline. Galaxy page link showing pipelines, data inputs/outputs, below;
-[https://usegalaxy.org/u/lakshmanw/h/transcriptome-analysis](URL). Copy and paste the link into your browser for access.
+[Transcriptome-analysis](https://usegalaxy.org/u/lakshmanw/h/transcriptome-analysis)
 
 ## Integrated Variant Analysis Pipeline
 This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on **cufflinks** to remove artifacts. Next the **annovar** tool is used to annotate and find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data. Copy and paste the link in your browser for access.
-[https://usegalaxy.org/u/lakshmanw/h/-integrated-variant-analysis-new](URL)
+[Integrated-variant-analysis](https://usegalaxy.org/u/lakshmanw/h/-integrated-variant-analysis-new)
 
 ## Bugs and Issues:
 Running the pipelines presented no issues in general for the exome and the transcriptome analysis. However i run into some problems running the Integrated Variant Analysis Pipe. 
