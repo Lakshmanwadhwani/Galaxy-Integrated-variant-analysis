@@ -9,7 +9,7 @@ The project consists of three pipelines;
 
 ## Exome Analysis Pipeline
 The work commences when we input our exome resequence data and map the sequence reads to the Hg19 genome. The task of mappig is accomplished using the **BWA** tool. Next PCR artifacts and duplicates are removed using **Picard**. Once this is completed the **Varscan** utility is used to call variants (Indels & SNP's). Below is the link to the galaxy page which should display all the pipelines data inputs,outputs and data visualization tools.Copy and paste the link in your browser to access.
-[https://usegalaxy.org/u/lakshmanw/h/imported-exome-basics-analysis-mp2](URL).
+[Exome Analysis](https://usegalaxy.org/u/lakshmanw/h/imported-exome-basics-analysis-mp2).
 
 
 ## Transcriptome Analysis Pipeline
