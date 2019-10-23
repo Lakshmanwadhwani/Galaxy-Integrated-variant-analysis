@@ -17,7 +17,7 @@ During this step RNA-seq data is used as the primary input. The **TopHat2** util
 [Transcriptome-analysis](https://usegalaxy.org/u/lakshmanw/h/transcriptome-analysis)
 
 ## Integrated Variant Analysis Pipeline
-This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on **cufflinks** to remove artifacts. Next the **annovar** tool is used to annotate and find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data. Copy and paste the link in your browser for access.
+This step takes inputs (variants) from the exome and transcription analysis pipes. First mapped RNA-seq data (no fusions) is run on **cufflinks** to remove artifacts. Next the **annovar** tool is used to annotate and find expressed rare and deletrious variants. The genes are identified and the information is run against the drug-gene interaction database [www.dgidb.org](url). Finally a summary of the genes, mutations and potential drugs is generated. Below is the link all the pipelines and data.Link to Galaxy pipelines and Data;
 [Integrated-variant-analysis](https://usegalaxy.org/u/lakshmanw/h/-integrated-variant-analysis-new)
 
 ## Bugs and Issues:
